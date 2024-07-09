@@ -56,9 +56,9 @@ You can access the Postman Collection for this project using the link below:
 1. GET /users - Retrieve a list of all registered users.
 2. GET /users/{userId} - Retrieve the details of a specific user.
 3. POST /users - Register a new user to the contest.
-        Request Body: { "userId": "string", "username": "string" }
+       * Request Body: { "userId": "string", "username": "string" }
 4. PUT /users/{userId} - Update the score of a specific user.
-        Request Param: score
+       * Request Param: score
 5. DELETE /users/{userId} - Deregister a specific user from the contest.
 
 ## Validation and Error Handling
@@ -66,13 +66,13 @@ You can access the Postman Collection for this project using the link below:
 2. Username: Must be provided.
 3. Score: Must be between 0 and 100.
 4. Badges: Automatically assigned based on score thresholds.
-        1 <= Score < 30 -> Code Ninja
-        30 <= Score < 60 -> Code Champ
-        60 <= Score <= 100 -> Code Master
+      a. 1 <= Score < 30 -> Code Ninja
+      b. 30 <= Score < 60 -> Code Champ
+      c. 60 <= Score <= 100 -> Code Master
 5. Error Codes:
-    404 Not Found: User not found.
-    400 Bad Request: Validation errors or invalid input.
-    500 Internal Server Error: Server errors.
+      a. 404 Not Found: User not found.
+      b. 400 Bad Request: Validation errors or invalid input.
+      c. 500 Internal Server Error: Server errors.
    
 ## Contact
 If you have any questions or suggestions, feel free to contact me:
